@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("a = ");
+        ulong a = Convert.ToUInt32(Console.ReadLine());
+        ulong b = a;
+        ulong fc = 1;
+        do
+        {
+            fc = fc * b;
+            --b;
+        }
+        while (b > 1);
+
+        Console.WriteLine($"{a}! = {fc}");
+
+        Console.ReadLine();
+    }
+}
